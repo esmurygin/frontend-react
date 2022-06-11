@@ -1,3 +1,179 @@
+/* ! Remove font-faces */
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: extended;
+    src: url(../../styles/fonts/RFDewiExtended-Black.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../../styles/fonts/RFDewi-Regular.ttf);
+}
+
+.faq>ul {
+    padding: 0;
+    width: 100%;
+}
+
+.faq__title {
+    margin: 0;
+    margin-bottom: 44px;
+}
+
+.faq>ul>li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq>ul>li>a>img {
+    margin: 1rem;
+}
+
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 48px;
+    padding: 126px 120px;
+}
+
+footer.nashe_delo_footer {
+    display: block;
+    background: #001529;
+    min-height: 10rem;
+    border-radius: 80px 80px 0px 0px;
+}
+
+footer.nashe_delo_footer::before {
+    content: "© I PRO. MoscowCityHack 2022";
+    visibility: visible;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    color: #9CA7C9;
+
+}
+
+
+.main-page-section-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-2-section {
+    width: 100%;
+    max-width: 500px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 54px;
+    padding-bottom: 5rem;
+}
+
+.section-2-section .title,
+.faq__title {
+    font-family: extended;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    background: linear-gradient(28.9deg, #001529 11.79%, #274B6E 92.08%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-2-section .description {
+    color: #515151;
+    margin: 32px 0px 48px 0px;
+    font-family: regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.section-2-image {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-image>img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.section-1-buttons {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page-btn-black,
+.main-page-btn-filled,
+.main-page-btn-empty {
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    padding: 10px 74px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+
+
+.main-page-btn-filled {
+    background-color: #2892F4;
+    border: 1px solid #2892F4;
+    color: white;
+    margin-right: 1rem;
+}
+
+.main-page-btn-filled:hover {
+    background-color: transparent;
+    color: #262626;
+
+}
+
+.main-page-btn-empty:hover {
+    background-color: #2892F4;
+    color: white;
+
+}
+
+.main-page-btn-empty {
+    background-color: transparent;
+    border: 1px solid #1890FF;
+    color: #262626;
+}
+
+.main-page-btn-black {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-right: 1rem;
+}
+
+
 .page-content {
     display: flex;
     flex-direction: column;
@@ -8,8 +184,9 @@
     padding: 0 126px;
 }
 
-.section-1-bars, .section-1-bar-and-section {
-    display:flex;
+.section-1-bars,
+.section-1-bar-and-section {
+    display: flex;
     flex-direction: row;
     width: 100%;
 }
@@ -19,55 +196,74 @@
     width: 100%;
 }
 
-.bar {
+.flex-spacer {
     width: 100%;
+    max-width: 2rem;
+}
+
+.bar {
     padding: 70px 60px;
     background-color: white;
     border-radius: 52px;
-    font: 'extended';
+    font-family: extended;
 }
 
 .bar.nashe {
-    font-family: RF Dewi Expanded;
+    max-width: 600px;
+    flex-grow: 1;
+    font-family: extended;
     font-size: 72px;
     font-weight: 900;
     line-height: 72px;
     letter-spacing: 0em;
     text-align: left;
     margin: 22px;
+    margin-left: 0;
 }
 
 .bar.vmeste {
-    font-family: RF Dewi Expanded;
+    flex-shrink: 1;
+    width: fit-content;
+    font-family: regular;
     font-size: 72px;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0em;
     text-align: left;
     margin: 22px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .bar.bolshe {
-    font-family: RF Dewi Expanded;
+    max-width: 700px;
+    width: 100%;
+    font-family: regular;
     font-size: 72px;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0em;
     text-align: left;
     margin: 22px;
+    margin-left: 0;
 }
+
 .section-1-section {
-    display:flex;
+
+    color: #515151;
+    max-width: 237px;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 40px;
     font-family: 'regular';
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 
@@ -117,9 +313,9 @@ body {
     align-items: center;
 }
 
-.navigation-panel__item__logo {
+.navigation-panel__item.navigation-panel__item__logo {
     /* TODO: Подключить фонт */
-    font-family: "extended";
+    font-family: extended;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
@@ -154,6 +350,7 @@ body {
     line-height: 22px;
 }
 
+
 .navigation-panel__item.search a {
     height: 100%;
     display: flex;
@@ -178,7 +375,7 @@ body {
     padding: 6px 12px;
     border-radius: 8px;
     font-weight: 300;
-    font-family: 'regular';
+    font-family: regular;
 }
 
 .navigation-panel__item.navigation-panel__item__selected {
@@ -188,6 +385,7 @@ body {
 
 .navigation-panel__login,
 .navigation-panel__register {
+    cursor: pointer;
     outline: none;
     border: none;
     padding: 1px 8px 3px 8px;
