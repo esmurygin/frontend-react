@@ -45,9 +45,17 @@ export default class login extends React.Component {
     render(){
         return(
             <form onSubmit={this.handleSubmit} className={style.login}>
-                <input className={style.inp} value={this.state.login} onChange={this.loginChange}/>
-                <input className={style.inp} value={this.state.password} onChange={this.passwordChange}/>
-                <input type='submit' value='Submit'/>
+                <h1 className={style.hed1special}>Nashe Delo</h1>
+                <p className={style.par}>Ещё нет аккаунта? <a className={style.link}>Зарегестрироваться</a></p>
+                <h1 className={style.hed1}>Вход</h1>
+                <input className={style.inpLogin} value={this.state.login} placeholder="Электропочта*" onChange={this.loginChange}/>
+                <input className={style.inpPassword} value={this.state.password} placeholder="Пароль*" onChange={this.passwordChange}/>
+                <div className={style.rowSpecial}>
+                    <input className={style.check} type="checkbox" id="memory"/><label for="memory" className={[style.lbl, style.extended].join(' ')}>Запомнить меня</label>
+                    <a className={[style.link2, style.fontRegular].join(' ')}>Забыли пароль?</a>
+                </div>
+                <input type='submit' value='Войти' className={style.button}/>
+                <input type='submit' value='Регистрация организатора' className={style.button2}/>
             </form>
         )      
     }
