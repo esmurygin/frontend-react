@@ -1,11 +1,3 @@
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/i-pro-hackaton/frontend-react">
-    <img src="public/vercel.svg" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">Nashe delo (frontend)</h3>
 
   <p align="center">
