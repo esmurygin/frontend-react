@@ -19,7 +19,6 @@ export default class login extends React.Component {
         this.setState({ password: event.target.value })
     }
 
-
     handleSubmit(event) {
         event.preventDefault();
         fetch('https://i-pro-backend.herokuapp.com/login', {
@@ -40,6 +39,7 @@ export default class login extends React.Component {
             }
         })
     }
+
     render() {
         return (
             <form onSubmit={this.handleSubmit} className={style.login}>
