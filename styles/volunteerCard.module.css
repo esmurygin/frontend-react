@@ -1,0 +1,104 @@
+.volunteerCard {
+    width: 410px;
+    height: 323px;
+    background-color: #FFF;
+    border-radius: 16px;
+    position: relative;
+}
+
+.cardContent {
+    padding: 18px 21px 40px 21px;
+}
+
+.volunteerCardImage {
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+}
+
+.volunteerVolunteer {
+    font-family: RF Dewi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.volunteerStat {
+    font-family: RF Dewi;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.volunteerName {
+    font-family: RF Dewi;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #18191B;
+}
+
+.bookMark {
+    cursor: pointer;
+    position: absolute;
+    top: 26px;
+    right: 18px;
+}
+
+.cardSubtitle {
+    font-family: RF Dewi;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #18191B;
+    margin: 0.8rem 0;
+}
+
+.containerFlexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.directionGeneral {
+    padding: 5px 12px;
+    color:white;
+    border-radius: 250px;
+    margin-right: 6px;
+    margin-bottom: 7px;
+}
+
+.directionOrange {
+    background: #E53331;
+}
+
+.directionBlue {
+    background: #394291;
+}
+
+.directionPink {
+    background: #E13072;
+}
+
+.link {
+    cursor: pointer;
+    color: #2892F4;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
