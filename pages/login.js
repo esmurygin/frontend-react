@@ -17,7 +17,7 @@ export default function loginPage() {
                 bottom: '0.25em',
                 right: '7em',
                 textAlign: 'center'
-             }}><button>????</button></div>
+             }}></div>
         </div>
   )
 }
