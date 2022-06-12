@@ -111,7 +111,7 @@ footer.nashe_delo_footer::before {
     max-width: 500px;
 }
 
-.section-1-buttons {
+.section1buttons {
     margin-top: 42px;
     display: flex;
     flex-direction: row;
@@ -120,7 +120,7 @@ footer.nashe_delo_footer::before {
 }
 
 .main-page-btn-black,
-.main-page-btn-filled,
+.mainpagebtnfilled,
 .main-page-btn-empty {
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
     padding: 10px 74px;
@@ -138,14 +138,14 @@ footer.nashe_delo_footer::before {
 
 
 
-.main-page-btn-filled {
+.mainpagebtnfilled {
     background-color: #2892F4;
     border: 1px solid #2892F4;
     color: white;
     margin-right: 1rem;
 }
 
-.main-page-btn-filled:hover {
+.mainpagebtnfilled:hover {
     background-color: transparent;
     color: #262626;
 
