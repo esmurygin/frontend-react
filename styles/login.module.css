@@ -39,13 +39,14 @@
 }
 
 .inpLogin{
+    background-color: white;
     width: 100%;
     text-align: center;
-    height: 40px;
+    /* height: 40px; */
     font-size: 16px;
     font-family: regular;
     border-radius: 4px;
-    border: 0.7px solid #BFBFBF;
+    /* border: 0.7px solid #BFBFBF; */
     margin-bottom: 32px;
 }
 
@@ -54,13 +55,14 @@
 }
 
 .inpPassword{
+    background-color: white;
     width: 100%;
     text-align: center;
-    height: 40px;
+    /* height: 40px; */
     font-size: 16px;
     font-family: regular;
     border-radius: 4px;
-    border: 0.7px solid #BFBFBF;
+    /* border: 0.7px solid #BFBFBF; */
     margin-bottom: 24px;
 }
 
