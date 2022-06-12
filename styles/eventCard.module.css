@@ -1,11 +1,69 @@
 .eventCard {
     border-radius: 16px;
     background-color: white;
-    color: yellow;
-    height:629px;
-    width:410px;
+    color: #18191B;
+    height: 629px;
+    display: flex;
+    flex-direction: column;
+    width: 410px;
 }
 
 .eventCardImage {
-   
+    height: 200px;
+}
+
+.circleOrange {
+    height: 16px;
+    width: 16px;
+    background-color: #FFA877;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 8px 22px 22px 22px;
+}
+
+.circleText {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerText {
+    margin: 20px 0;
+    font-family: RF Dewi;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.cardDescription {
+    font-family: RF Dewi;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.smallHeaderText {
+    margin-bottom:0;
+    font-family: RF Dewi;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #18191B;
+
 }
