@@ -82,6 +82,7 @@
 }
 
 .changeAvatarImgBtn {
+    cursor:pointer;
     height: 33px;
     display: flex;
     width: 170px;
