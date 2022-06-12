@@ -1,0 +1,42 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacerFive {
+    height: 5rem;
+}
+
+.spacerFiveFive {
+    height: 55rem;
+}
+.flexAlignColumn {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flexAlignColumn > * {
+    width: 100%;
+}
+
+.organizationRows {
+    display:flex;
+    flex-direction: row;
+}
+.navigationMenu {
+    display:block;
+    background-color: white;
+    height: 639px;
+    min-width: 260px;
+}
+
+.myEventsColumn {
+    display:block;
+    flex-grow: 1;
+    background-color: red;
+}

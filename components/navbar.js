@@ -4,7 +4,6 @@ import style from '../styles/navbar.module.css'
 export default class Navbar extends React.Component {
     constructor(props) {
         super(props);
-       
     }
 
     render() {
@@ -31,7 +30,7 @@ export default class Navbar extends React.Component {
                             <form className={[style.navigationPanelItem, style.search].join(' ')} action="">
                                 <input type="search" placeholder="Найдите доброе дело" required />
                                 <a href="">
-                                    <img src={"../styles/svg/mainPage_searchIcon.svg"} alt="" />
+                                    <img src={"/static/searchIcon.svg"} alt="" />
                                 </a>
                             </form>
                             <a href="#">
