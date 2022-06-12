@@ -1,0 +1,121 @@
+.navigationPanelWrapper {
+    background-color: #001529;
+    margin: 0 40px;
+    border-radius: 0 0 16px 16px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.navigationPanel {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 40px;
+    border-radius: 0 0 16px 16px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigationPanel>* {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationPanelItem.navigationPanelItemLogo {
+    /* TODO: Подключить фонт */
+    font-family: extended;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.navigationPanelItem.navigationPanelItemSelected {
+    background-color: #152A3F;
+    font-weight: 400;
+}
+
+
+.navigationPanelItem {
+    /* width: 100%; */
+    font-size: 16px;
+    color: white;
+    background-color: #001529;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 300;
+    font-family: regular;
+}
+
+.navigationPanelItem.search {
+    position: relative;
+    margin: 0 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navigationPanelItem.search>input {
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 12px;
+    border: 1px solid #7D7D7D;
+    background-color: #001529;
+    border-radius: 4px;
+    color: white;
+    font-family: 'regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+.navigationPanelItem.search a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationPanelItem.search>*>img {
+    position: absolute;
+    right: 10px;
+}
+
+.navigationPanelLogin,
+.navigationPanelRegister {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 1px 8px 3px 8px;
+}
+
+.navigationPanelRegister {
+    margin-left: 16px;
+}
+
+.navigationPanelItem.navigationPanelLogin {
+    font-weight: 400;
+    background-color: #2892F4;
+    border: 1px solid #2892F4;
+}
+
+.navigationPanelItem.navigationPanelRegister {
+    font-weight: 400;
+    background-color: #001529;
+    border: 1px solid #7D7D7D;
+}
+
+.navigationPanelSpacer {
+    flex-grow: 1;
+}
