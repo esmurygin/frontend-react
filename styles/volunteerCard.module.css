@@ -23,7 +23,7 @@
 }
 
 .volunteerVolunteer {
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 12px;
     font-weight: 400;
     line-height: 17px;
@@ -33,7 +33,7 @@
 }
 
 .volunteerStat {
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 12px;
     font-weight: 300;
     line-height: 17px;
@@ -43,7 +43,7 @@
 }
 
 .volunteerName {
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 24px;
     font-weight: 600;
     line-height: 34px;
@@ -60,7 +60,7 @@
 }
 
 .cardSubtitle {
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;

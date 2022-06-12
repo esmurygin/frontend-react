@@ -36,7 +36,7 @@
 
 .headerText {
     margin: 20px 0;
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 22px;
     font-weight: 600;
     line-height: 34px;
@@ -46,7 +46,7 @@
 }
 
 .cardDescription {
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 12px;
     font-weight: 300;
     line-height: 17px;
@@ -58,7 +58,7 @@
 
 .smallHeaderText {
     margin-bottom:0;
-    font-family: RF Dewi;
+    font-family: regular;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
