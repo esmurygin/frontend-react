@@ -73,35 +73,35 @@ export default class login extends React.Component {
                             </div>
                         </div>
                         <div className={style.section1buttons}>
-                            <a href="#"><button class="main-page-btn-filled">Хочу помогать</button></a>
-                            <a href="#"><button class="main-page-btn-empty">Стать организатором</button></a>
+                            <a href="#"><button className="main-page-btn-filled">Хочу помогать</button></a>
+                            <a href="#"><button className="main-page-btn-empty">Стать организатором</button></a>
                         </div>
                     </div>
-                    <div class="spacer-5"></div>
-                    <div class="spacer-5"></div>
-                    <div class="main-page-section-2">
-                        <div class="section-2-section">
-                            <h3 class="title">
+                    <div className="spacer-5"></div>
+                    <div className="spacer-5"></div>
+                    <div className="main-page-section-2">
+                        <div className="section-2-section">
+                            <h3 className="title">
                                 Делай добро -
                                 получай бонусы
                             </h3>
-                            <p class="description">
+                            <p className="description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius laoreet.
                                 Et non in orci morbi amet, tellus faucibus. Et amet tincidunt turpis gravida semper tristique leo.
                             </p>
-                            <a href="#"><button class="main-page-btn-black">Узнать подробнее</button></a>
+                            <a href="#"><button className="main-page-btn-black">Узнать подробнее</button></a>
                         </div>
-                        <div class="section-2-image">
+                        <div className="section-2-image">
                             <img src="mainPage_cardsImage.png" alt="" />
                         </div>
                     </div>
-                    <div class="spacer-5"></div>
-                    <div class="spacer-5"></div>
-                    <div class="spacer-5"></div>
-                    <div class="spacer-5"></div>
+                    <div className="spacer-5"></div>
+                    <div className="spacer-5"></div>
+                    <div className="spacer-5"></div>
+                    <div className="spacer-5"></div>
 
-                    <div class="faq">
-                        <h3 class="faq__title">
+                    <div className="faq">
+                        <h3 className="faq__title">
                             Частые вопросы
                         </h3>
                         <ul>
@@ -136,11 +136,11 @@ export default class login extends React.Component {
                                                 <hr></hr>
                                                 </ul>
                                             </div>
-                                            <div class="spacer-5"></div>
-                                            <div class="spacer-5"></div>
-                                            <div class="spacer-5"></div>
+                                            <div className="spacer-5"></div>
+                                            <div className="spacer-5"></div>
+                                            <div className="spacer-5"></div>
                                         </div>
-                                        <footer class="nashe_delo_footer"></footer>
+                                        <footer className="nashe_delo_footer"></footer>
                                     </div>
 
                                     )      

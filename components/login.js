@@ -51,7 +51,7 @@ export default class login extends React.Component {
                 <input className={style.inpLogin} value={this.state.login} placeholder="Электропочта*" onChange={this.loginChange}/>
                 <input className={style.inpPassword} value={this.state.password} placeholder="Пароль*" onChange={this.passwordChange}/>
                 <div className={style.rowSpecial}>
-                    <input className={style.check} type="checkbox" id="memory"/><label for="memory" className={[style.lbl, style.extended].join(' ')}>Запомнить меня</label>
+                    <input className={style.check} type="checkbox" id="memory"/><label htmlFor="memory" className={[style.lbl, style.extended].join(' ')}>Запомнить меня</label>
                     <a className={[style.link2, style.fontRegular].join(' ')}>Забыли пароль?</a>
                 </div>
                 <input type='submit' value='Войти' className={style.button}/>
