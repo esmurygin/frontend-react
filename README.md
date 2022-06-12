@@ -3,7 +3,7 @@
   <p align="center">
     Веб-сервис
     <br />
-    <a href="https://i-pro-backend.herokuapp.com/docs"><strong>Пример онлайн</strong></a>
+    <a href="https://i-pro-react.herokuapp.com"><strong>Пример онлайн</strong></a>
     <br />
     <br />
 </div>
@@ -51,7 +51,7 @@ npm run build
 npm run start
 ```
 
-<i>Для большего понимание лучше посмотреть  <a href="https://i-pro-backend.herokuapp.com/docs"><strong>онлайн версию</strong></a></i>
+<i>Для большего понимание лучше посмотреть  <a href="https://i-pro-react.herokuapp.com"><strong>онлайн версию</strong></a></i>
 
 
 
