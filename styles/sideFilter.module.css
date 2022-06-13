@@ -1,0 +1,38 @@
+.big{
+    font-family: regular;
+    font-size: 20px;
+    
+}
+.header1{
+    margin-left: 22px;
+}
+.text{
+    font-family: regular;
+    font-size: 14px;
+}
+
+.firstHeader{
+    margin-top: 32px;
+}
+
+.tasksMain{
+    display: flexbox;
+    flex-direction: column;
+    background-color: white;
+    width: 375px;
+    height: 740px;
+    border-radius: 16px;
+}
+
+.lists1{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+
+.pair{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-left: 22px;
+}

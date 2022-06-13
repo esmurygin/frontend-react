@@ -8,7 +8,7 @@ export default function testCards() {
       <div style={{backgroundColor: '#EFF1FB'}}>
          <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <SearchFilters></SearchFilters>
-            {/* <VolunteerCard image={"/static/denis.png"}></VolunteerCard> */}
+            {/* { <VolunteerCard image={"/static/denis.png"}></VolunteerCard> } */}
             {/* <div style={{
                 position: 'fixed',
                 bottom: '0.25em',

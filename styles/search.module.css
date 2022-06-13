@@ -1,0 +1,90 @@
+.navigationPanelItem.navigationPanelItemLogo {
+    /* TODO: Подключить фонт */
+    font-family: extended;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.navigationPanelItem.navigationPanelItemSelected {
+    background-color: white;
+    font-weight: 400;
+}
+
+
+.navigationPanelItem {
+    /* width: 100%; */
+    font-size: 16px;
+    color: white;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 0.5em;
+    font-weight: 300;
+    font-family: regular;
+    width: 205px;
+}
+
+.navigationPanelItem.search {
+    position: relative;
+    margin: 0 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navigationPanelItem.search>input {
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 12px;
+    border: 1px solid #7D7D7D;
+    background-color: white;
+    border-radius: 4px;
+    color: white;
+    font-family: 'regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+.navigationPanelItem.search a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationPanelItem.search>*>img {
+    position: absolute;
+    right: 10px;
+}
+
+.navigationPanelLogin,
+.navigationPanelRegister {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 1px 8px 3px 8px;
+}
+
+.navigationPanelRegister {
+    margin-left: 16px;
+}
+
+.navigationPanelItem.navigationPanelLogin {
+    font-weight: 400;
+    background-color: #2892F4;
+    border: 1px solid #2892F4;
+}
+
+.navigationPanelItem.navigationPanelRegister {
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #7D7D7D;
+}

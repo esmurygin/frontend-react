@@ -1,68 +1,33 @@
 import React from 'react';
 import style from '../styles/main.module.css'
+import Navbar from './navbar';
 
-export default class login extends React.Component {
+export default class Main extends React.Component {
     constructor(props) {
         super(props);
-        this.loginChange = this.loginChange.bind(this)
-        this.passwordChange = this.passwordChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-        this.state = { login: "", password: "" }
     }
 
 
     render() {
         return (
-            <div>
-                <div className={style.navigationPanelWrapper}>
-                    <nav className={style.navigationPanel}>
-                        <div>
-                            <a href="#" className={[style.navigationPanelItem, style.navigationPanelItemLogo].join(' ')}>
-                                Nashe Delo
-                            </a>
-                        </div>
-                        <div></div>
-                        <div>
-                            <a href="#" className={[style.navigationPanelItem, style.navigationPanelItemSelected].join(' ')}>
-                                Главная
-                            </a>
-                            <a href="" className={style.navigationPanelItem}>
-                                Наша карта
-                            </a>
-                            <a href=""  className={style.navigationPanelItem}>
-                                FAQ
-                            </a>
-                            <form className={[style.navigationPanelItem, style.search].join(' ')} action="">
-                                <input type="search" placeholder="Найдите доброе дело" required />
-                                <a href="">
-                                    <img src={"../styles/svg/mainPage_searchIcon.svg"} alt="" />
-                                </a>
-                            </form>
-                            <a href="#">
-                                <button className={[style.navigationPanelItem, style.navigationPanelLogin].join(' ')}>Войти</button>
-                            </a>
-                            <a href="#">
-                                <button className={[style.navigationPanelItem, style.navigationPanelRegister].join(' ')}>Зарегистрироваться</button>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
+            <div className={style.mainBody}>
+                <Navbar></Navbar>
                 <div className={style.pageContent} >
                     <div className={style.spacer5}></div>
                     <div className={style.mainPageSection1}>
                         <div className={style.section1bars}>
-                            <div className={style.barnashe}>
+                            <div className={[style.bar, style.nashe].join(' ')}>
                                 Nashe delo
                             </div>
                             <div className={style.flexSpacer}>
 
                             </div>
-                            <div className={style.barvmeste}>
+                            <div className={[style.bar, style.vmeste].join(' ')}>
                                 вместе
                             </div>
                         </div>
                         <div className={style.section1barandsection}>
-                            <div className={style.barbolshe}>
+                            <div nclassName={style.barbolshe}>
                                 больше добра
                             </div>
                             <div className={style.flexSpacer}>
