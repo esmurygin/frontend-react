@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../styles/sideFilter.module.css'
 
-export default class SideFilters extends React.Component {
+export default class sidefilters extends React.Component {
     constructor(props) {
         super(props);
         this.state = {format: '', 
