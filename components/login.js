@@ -30,7 +30,8 @@ export default class login extends React.Component {
         }).then((res) => {
             if (res.status == 200) {
                 res.json().then((res) => {
-                    alert(res['access_token'])
+                    localStorage.setItem('token', res['access_token']);
+                    document.location.href = '/organisationTasks';
                 })
             } else {
                 res.json().then((res) => {

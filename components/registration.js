@@ -1,6 +1,5 @@
 import React from 'react';
 import style from '../styles/registration.module.css'
-
 export default class Register extends React.Component {
     constructor(props){
         super(props);
@@ -39,13 +38,14 @@ export default class Register extends React.Component {
             body: `username=${this.state.login}&password=${this.state.password}&name=${this.state.name}&surname=${this.state.surname}`
         }).then((res)=>{
             if(res.status == 200){
-
+                document.location.href = '/login';
             }else{
                 res.json().then((res)=>{
                     alert(res['detatils']);
                 })
             }
-        })
+        });
+
     }
 
     render(){

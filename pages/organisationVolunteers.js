@@ -4,11 +4,17 @@ import OrganizationHat from '../components/organizationHat'
 import Footer from '../components/footer'
 import VolunteerCard from '../components/volunteerCard';
 import SideScreen from '../components/sideScreen';
-import volunteercard from '../components/volunteerCard';
+import Search from '../components/search';
 
-export default function organizationPage() {
-    return (
-        <div className={style.flexAlignColumn} style={{ width: '100%', backgroundColor: "#EFF1FB", }}>
+export default class organisationVolunteers extends React.Component {
+    constructor(props){
+        super(props);
+        
+    }
+
+    render(){
+        return (
+            <div className={style.flexAlignColumn} style={{ width: '100%', backgroundColor: "#EFF1FB", }}>
             <MainNavbar></MainNavbar>
             <div className={style.pageContent}>
                 <div className={style.spacerFive}></div>
@@ -16,10 +22,14 @@ export default function organizationPage() {
                 <div className={style.sidebar}>
                     <SideScreen n='2'></SideScreen>
                     <div>
-                        <h1 className={style.big}>Мои волонтёры</h1>
-                        <div className={style.flex}>
-                            <div className={style.searchBar}></div>
-                            <div className={style.add}></div>
+                    <h1 className={style.big}>Мои волонтёры</h1>
+                        <div className={style.spacebtw}>
+                            <div className={style.searchBar}>
+                                <Search></Search>
+                            </div>
+                            <div className={style.add}>
+                                <p className='p'>Добавить</p>
+                            </div>
                         </div>
                         <div className={style.organizationRows}>
                             <div className={style.navigationMenu}>
@@ -38,5 +48,6 @@ export default function organizationPage() {
 
             <Footer></Footer>
         </div>
-    )
+        )
+    }
 }
