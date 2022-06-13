@@ -37,7 +37,7 @@
 ### Установка зависимостей
 
   ```sh
- npm install
+ npm install @mui/material @emotion/react @emotion/styled @mui/x-date-pickers date-fns
   ```
 
 ### Запуск для разработчиков
