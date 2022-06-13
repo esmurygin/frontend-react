@@ -1,4 +1,4 @@
-
+/* 
 @font-face {
     font-family: extended;
     src: url(../../styles/fonts/RFDewiExtended-Black.ttf);
@@ -7,7 +7,7 @@
 @font-face {
     font-family: regular;
     src: url(../../styles/fonts/RFDewi-Regular.ttf);
-}
+} */
 
 .faq>ul {
     padding: 0;
@@ -273,13 +273,13 @@ footer.nashe_delo_footer::before {
     height: 95px;
 }
 
-html {
+.mainBody {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
+.mainBody {
     background: #EFF1FB;
 }
 
@@ -404,7 +404,7 @@ body {
     border: 1px solid #7D7D7D;
 }
 
-search {
+/* search {
     display: flex;
     flex-direction: row;
-}
+} */
