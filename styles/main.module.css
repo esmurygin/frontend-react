@@ -8,13 +8,21 @@
     font-family: regular;
     src: url(../../styles/fonts/RFDewi-Regular.ttf);
 } */
+.spacer5 {
+    height: 95px;
+}
+
+.mainpagesection2 {
+    display: flex;
+    flex-direction: row;
+}
 
 .faq>ul {
     padding: 0;
     width: 100%;
 }
 
-.faq__title {
+.faqTitle {
     margin: 0;
     margin-bottom: 44px;
 }
@@ -39,14 +47,14 @@
     padding: 126px 120px;
 }
 
-footer.nashe_delo_footer {
+footer.nasheDeloFooter {
     display: block;
     background: #001529;
     min-height: 10rem;
     border-radius: 80px 80px 0px 0px;
 }
 
-footer.nashe_delo_footer::before {
+footer.nasheDeloFooter::before {
     content: "© I PRO. MoscowCityHack 2022";
     visibility: visible;
     width: 100%;
@@ -64,7 +72,7 @@ footer.nashe_delo_footer::before {
     flex-direction: row;
 }
 
-.section-2-section {
+.section2section {
     width: 100%;
     max-width: 500px;
     min-width: 500px;
@@ -74,8 +82,8 @@ footer.nashe_delo_footer::before {
     padding-bottom: 5rem;
 }
 
-.section-2-section .title,
-.faq__title {
+.section2section .title,
+.faqTitle {
     font-family: extended;
     font-style: normal;
     font-weight: 700;
@@ -87,7 +95,7 @@ footer.nashe_delo_footer::before {
     -webkit-text-fill-color: transparent;
 }
 
-.section-2-section .description {
+.section2section .description {
     color: #515151;
     margin: 32px 0px 48px 0px;
     font-family: regular;
@@ -97,7 +105,7 @@ footer.nashe_delo_footer::before {
     line-height: 140%;
 }
 
-.section-2-image {
+.section2image {
     width: 100%;
     max-width: 500px;
     display: flex;
@@ -106,7 +114,7 @@ footer.nashe_delo_footer::before {
     align-items: center;
 }
 
-.section-2-image>img {
+.section2image>img {
     width: 100%;
     max-width: 500px;
 }
@@ -119,12 +127,13 @@ footer.nashe_delo_footer::before {
     align-items: center;
 }
 
-.main-page-btn-black,
+.mainpagebtnblack,
 .mainpagebtnfilled,
-.main-page-btn-empty {
+.mainpagebtnempty {
+    font-family: regular;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
     padding: 10px 74px;
-    font-family: "Roboto";
+    
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -293,7 +302,7 @@ footer.nashe_delo_footer::before {
     justify-content: center;
 }
 
-.navigation-panel {
+.navigationPanel {
     width: 100%;
     max-width: 1220px;
     margin: 0 40px;
@@ -303,7 +312,7 @@ footer.nashe_delo_footer::before {
     flex-direction: row;
 }
 
-.navigation-panel>* {
+.navigationPanel>* {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -360,7 +369,7 @@ footer.nashe_delo_footer::before {
     right: 10px;
 }
 
-.navigation-panel__spacer {
+.navigationPanelSpacer {
     flex-grow: 1;
 }
 

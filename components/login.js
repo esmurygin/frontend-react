@@ -45,7 +45,7 @@ export default class login extends React.Component {
         return (
             <form onSubmit={this.handleSubmit} className={style.login}>
                 <h1 className={style.hed1special}>Nashe Delo</h1>
-                <p className={style.par}>Ещё нет аккаунта? <a className={style.link}>Зарегестрироваться</a></p>
+                <p className={style.par}>Ещё нет аккаунта? <a href="/registration" className={style.link}>Зарегистрироваться</a></p>
                 <h1 className={style.hed1}>Вход</h1>
                 <TextField className={style.inpLogin} id="outlined-basic" label="Электропочта*" variant="outlined" value={this.state.login} onChange={this.loginChange} />
                 <TextField className={style.inpPassword} id="outlined-basic" label="Пароль*" variant="outlined" value={this.state.password} onChange={this.passwordChange} />

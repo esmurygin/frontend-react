@@ -1,5 +1,7 @@
 import React from 'react';
 import style from '../styles/registration.module.css'
+import TextField from '@mui/material/TextField';
+
 export default class Register extends React.Component {
     constructor(props){
         super(props);
@@ -56,6 +58,20 @@ export default class Register extends React.Component {
                 <input value={this.state.login} onChange={this.loginChange}/>
                 <input value={this.state.password} onChange={this.passwordChange}/>
                 <input type='submit' value='Submit'/>
+                <form onSubmit={this.handleSubmit} className={style.login}>
+                <h1 className={style.hed1special}>Nashe Delo</h1>
+                <p className={style.par}>Уже зарегестрированны? <a className={style.link}>Войти</a></p>
+                <h1 className={style.hed1}>Регистрация</h1>
+                <TextField className={style.inpName} id="outlined-basic" label="Имя*" variant="outlined" value={this.state.login} onChange={this.nameChange} />
+                <TextField className={style.inpSurname} id="outlined-basic" label="Фамилия*" variant="outlined" value={this.state.password} onChange={this.passwordChange} />
+                
+                <div className={style.rowSpecial}>
+                    <input className={style.check} type="checkbox" id="memory"/><label htmlFor="memory" className={[style.lbl, style.extended].join(' ')}>Запомнить меня</label>
+                    <a className={[style.link2, style.fontRegular].join(' ')}>Забыли пароль?</a>
+                </div>
+                <input type='submit' value='Войти' className={style.button} />
+                <input type='submit' value='Регистрация организатора' className={style.button2} />
+            </form>
             </form>
         )      
     }

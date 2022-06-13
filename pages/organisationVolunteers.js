@@ -4,6 +4,7 @@ import OrganizationHat from '../components/organizationHat'
 import Footer from '../components/footer'
 import VolunteerCard from '../components/volunteerCard';
 import SideScreen from '../components/sideScreen';
+import React from 'react';
 import Search from '../components/search';
 
 export default class organisationVolunteers extends React.Component {

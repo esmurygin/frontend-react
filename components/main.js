@@ -1,6 +1,7 @@
 import React from 'react';
 import style from '../styles/main.module.css'
 import Navbar from './navbar';
+import Footer from './footer';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -27,87 +28,87 @@ export default class Main extends React.Component {
                             </div>
                         </div>
                         <div className={style.section1barandsection}>
-                            <div nclassName={style.barbolshe}>
+                            <div className={[style.bar, style.bolshe].join(' ')}>
                                 больше добра
                             </div>
                             <div className={style.flexSpacer}>
 
                             </div>
                             <div className={style.section1section}>
-                                Получай часы за добрые дела и получай за них подарки от партнёров.
+                            Станьте волонтером, чтобы помогать
+                                        другим и получать уникальный опыт
                             </div>
                         </div>
                         <div className={style.section1buttons}>
-                            <a href="#"><button className="main-page-btn-filled">Хочу помогать</button></a>
-                            <a href="#"><button className="main-page-btn-empty">Стать организатором</button></a>
+                            <a href="/searchPage"><button className={style.mainpagebtnfilled}>Хочу помогать</button></a>
+                            <a href="#"><button className={style.mainpagebtnempty}>Стать организатором</button></a>
                         </div>
                     </div>
-                    <div className="spacer-5"></div>
-                    <div className="spacer-5"></div>
-                    <div className="main-page-section-2">
-                        <div className="section-2-section">
-                            <h3 className="title">
+                    <div className={style.spacer5}></div>
+                    <div className={style.spacer5}></div>
+                    <div className={style.mainpagesection2}>
+                        <div className={style.section2section}>
+                            <h3 className={style.title}>
                                 Делай добро -
                                 получай бонусы
                             </h3>
-                            <p className="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius laoreet.
-                                Et non in orci morbi amet, tellus faucibus. Et amet tincidunt turpis gravida semper tristique leo.
+                            <p className={style.description}>
+                            Зарабатывай часы за добрые дела и получай за них подарки от партнёров.
                             </p>
-                            <a href="#"><button className="main-page-btn-black">Узнать подробнее</button></a>
+                            <a href="#"><button className={style.mainpagebtnblack}>Узнать подробнее</button></a>
                         </div>
-                        <div className="section-2-image">
-                            <img src="mainPage_cardsImage.png" alt="" />
+                        <div className={style.section2image}>
+                            <img src={"/static/mainPage_cardsImage.png"} alt="" />
                         </div>
                     </div>
-                    <div className="spacer-5"></div>
-                    <div className="spacer-5"></div>
-                    <div className="spacer-5"></div>
-                    <div className="spacer-5"></div>
+                    <div className={style.spacer5}></div>
+                    <div className={style.spacer5}></div>
+                    <div className={style.spacer5}></div>
+                    <div className={style.spacer5}></div>
 
-                    <div className="faq">
-                        <h3 className="faq__title">
+                    <div className={style.faq}>
+                        <h3 className={style.faqTitle}>
                             Частые вопросы
                         </h3>
                         <ul>
                             <hr></hr>
-                                <li>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius
-                                        laoreet?</h4>
-                                    <a href=""><img src="mainPage_plusIcon.svg" alt="" /></a>
-                                </li>
-                                <hr></hr>
-                                    <li>
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius
-                                            laoreet?</h4>
-                                        <a href=""><img src="mainPage_plusIcon.svg" alt="" /></a>
-                                    </li>
-                                    <hr></hr>
-                                        <li>
-                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius
-                                                laoreet?</h4>
-                                            <a href=""><img src="mainPage_plusIcon.svg" alt="" /></a>
-                                        </li>
-                                        <hr></hr>
-                                            <li>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
-                                                <a href=""><img src="mainPage_plusIcon.svg" alt="" /></a>
-                                            </li>
-                                            <hr></hr>
-                                                <li>
-                                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
-                                                    <a href=""><img src="mainPage_plusIcon.svg" alt="" /></a>
-                                                </li>
-                                                <hr></hr>
-                                                </ul>
-                                            </div>
-                                            <div className="spacer-5"></div>
-                                            <div className="spacer-5"></div>
-                                            <div className="spacer-5"></div>
-                                        </div>
-                                        <footer className="nashe_delo_footer"></footer>
-                                    </div>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius
+                                    laoreet?</h4>
+                                <a href=""><img src="/static/mainPage_plusIcon.svg" alt="" /></a>
+                            </li>
+                            <hr></hr>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius
+                                    laoreet?</h4>
+                                <a href=""><img src="/static/mainPage_plusIcon.svg" alt="" /></a>
+                            </li>
+                            <hr></hr>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius
+                                    laoreet?</h4>
+                                <a href=""><img src="/static/mainPage_plusIcon.svg" alt="" /></a>
+                            </li>
+                            <hr></hr>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                                <a href=""><img src="/static/mainPage_plusIcon.svg" alt="" /></a>
+                            </li>
+                            <hr></hr>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                                <a href=""><img src="/static/mainPage_plusIcon.svg" alt="" /></a>
+                            </li>
+                            <hr></hr>
+                        </ul>
+                    </div>
+                    <div className={style.spacer5}></div>
+                    <div className={style.spacer5}></div>
+                    <div className={style.spacer5}></div>
+                </div>
+                <Footer></Footer>
+            </div>
 
-                                    )      
+        )
     }
 }
