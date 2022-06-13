@@ -35,7 +35,8 @@ export default class Main extends React.Component {
 
                             </div>
                             <div className={style.section1section}>
-                                Получай часы за добрые дела и получай за них подарки от партнёров.
+                            Станьте волонтером, чтобы помогать
+                                        другим и получать уникальный опыт
                             </div>
                         </div>
                         <div className={style.section1buttons}>
@@ -52,8 +53,7 @@ export default class Main extends React.Component {
                                 получай бонусы
                             </h3>
                             <p className={style.description}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices ut et et egestas varius laoreet.
-                                Et non in orci morbi amet, tellus faucibus. Et amet tincidunt turpis gravida semper tristique leo.
+                            Зарабатывай часы за добрые дела и получай за них подарки от партнёров.
                             </p>
                             <a href="#"><button className={style.mainpagebtnblack}>Узнать подробнее</button></a>
                         </div>
