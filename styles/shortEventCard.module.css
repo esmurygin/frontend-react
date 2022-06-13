@@ -4,6 +4,7 @@
     background-color: #FFF;
     border-radius: 16px;
     position: relative;
+    margin: 15px;
 }
 
 .cardContent {
@@ -16,6 +17,15 @@
     border-radius: 32px;
 
 }
+.volunteerCardImage {
+    height: 128px;
+    width: 100%;
+    /* width: 64px; */
+    border-radius: 32px;
+
+}
+
+
 
 .upper {
     display: flex;
@@ -30,6 +40,9 @@
     letter-spacing: 0px;
     text-align: left;
     margin-left: 25px;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
 
 }
 
