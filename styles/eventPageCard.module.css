@@ -1,0 +1,142 @@
+.eventPageCard {
+    height: 940px;
+    width: 1160px;
+    background-color: white;
+    border-radius: 32px;
+    padding: 44px 40px;
+}
+
+.eventPageTitle {
+    font-family: regular;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    max-width: 70%;
+    margin-bottom: 3rem;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.previewEvent {
+    width: 336px;
+    height: 235px;
+    border-radius: 16px;
+}
+
+.mainInfoTitle {
+    color: #262626;
+    font-family: regular;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    margin-top: 0;
+}
+
+.Line {
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 1rem;
+}
+
+.awardMessage {
+    font-family: regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+    padding-left: 50px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #FCEEDF;
+}
+
+.likeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: regular;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    color: #7D7D7D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.description {
+    width: 100%;
+    max-width: 670px;
+
+
+    font-family: regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #636467;
+
+}
+
+.spacerThree {
+    display: block;
+    height: 3rem;
+}
+
+.documentFieldBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 260px;
+    background: #FCEEDF;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.flexGrow {
+    flex-grow: 1;
+}
+
+.sendPrompt {
+    display: block;
+    background-color: #2892F4;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 74px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+}
