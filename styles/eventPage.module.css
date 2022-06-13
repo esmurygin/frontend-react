@@ -1,0 +1,110 @@
+.pageContent {
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacerFiveFive {
+    height: 55rem;
+}
+
+.spacerFive {
+    height: 5rem;
+}
+
+.spacerThree {
+    height: 3rem;
+}
+
+.navigationRoute {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    display: flex;
+    margin-right: 6px;
+    color: #2892F4;
+
+    font-family: regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subtitleTitle {
+    font-family: extended;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    color: #262626;
+}
+
+.recommendationGrid {
+    width: 100%;
+    display: grid;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.recommendationCard {
+    cursor: pointer;
+    min-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.spaceButton {
+    padding: 28px 200px;
+    background: #241B52;
+
+    border: none;
+    font-family: extended;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    color: #FFFFFFB2;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.recommendationCardImg {
+    border-radius: 16px;
+}
+
+.descriptionRecommendation {
+    font-family: regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #636467;
+
+}
+
+.recommendationCardImg {
+    clip: rect();
+
+}
