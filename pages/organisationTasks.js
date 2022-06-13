@@ -11,11 +11,15 @@ import React from 'react';
 export default class organisationPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { tasks: [] }
+        this.state = { tasks: [], tags: {} }
         fetch('https://i-pro-backend.herokuapp.com/task').then(res => {
             res.json().then(res => {
                 console.log(res);
-                this.setState({ tasks: res });
+                let temp = {}
+                res.forEach((el)=>{
+                    temp[el['id']] = ['Организация', 'Помощь']
+                })
+                this.setState({ tasks: res, tags: temp });
             })
         })
     }
@@ -32,7 +36,31 @@ export default class organisationPage extends React.Component {
                             <h1 className={style.big}>Мои мероприятия</h1>
                             <div className={style.spacebtw}>
                                 <div className={style.searchBar}>
-                                    <Search></Search>
+                                    <Search cb={(q)=>{
+                                        if(q != ''){
+                                            fetch(`http://i-pro-backend.herokuapp.com/task/search?search_query=${q}`).then(res=>{
+                                                res.json().then(res=>{
+                                                    console.log(res);
+                                                    let temp = {}
+                                                    res.forEach((el)=>{
+                                                        temp[el['id']] = ['Организация', 'Помощь']
+                                                    })
+                                                    this.setState({ tasks: res, tags: temp });
+                                                })
+                                            })    
+                                        }else{
+                                            fetch('https://i-pro-backend.herokuapp.com/task').then(res => {
+                                                res.json().then(res => {
+                                                    console.log(res);
+                                                    let temp = {}
+                                                    res.forEach((el)=>{
+                                                        temp[el['id']] = ['Организация', 'Помощь']
+                                                    })
+                                                    this.setState({ tasks: res, tags: temp });
+                                                })
+                                            })
+                                        }
+                                    }}></Search>
                                 </div>
                                 <div className={style.add}>
                                     <p className='p'>Добавить</p>
@@ -41,12 +69,24 @@ export default class organisationPage extends React.Component {
                             <div className={style.organizationRows}>
                                 <div className={style.navigationMenu}>
                                     {this.state.tasks.map((el, t) => 
-                                        (t % 2 == 0? <EventCard></EventCard>: '')
+                                        (t % 2 == 0? <EventCard 
+                                            name={el['name']} 
+                                            description={el['description']}
+                                             image_url={el['image_url']} 
+                                             tags={this.state.tags[el['id']]}
+                                             start_date={el['start_date']}
+                                             end_date={el['end_date']}></EventCard>: '')
                                     )}
                                 </div>
                                 <div className={style.myEventsColumn}>
                                     {this.state.tasks.map((el, t) => 
-                                        (t % 2 == 1? <EventCard></EventCard>: '')
+                                        (t % 2 == 1? <EventCard 
+                                             name={el['name']} 
+                                             description={el['description']} 
+                                             image_url={el['image_url']} 
+                                             tags={this.state.tags[el['id']]}
+                                             start_date={el['start_date']}
+                                             end_date={el['end_date']}></EventCard>: '')
                                     )}
                                 </div>
                             </div>
