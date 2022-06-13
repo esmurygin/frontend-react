@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../styles/footer.module.css'
 
-export default class Register extends React.Component {
+export default class Footer extends React.Component {
     constructor(props) {
         super(props);
     }
