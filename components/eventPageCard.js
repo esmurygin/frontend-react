@@ -5,6 +5,7 @@ export default class eventpagecard extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {title: this.props.title}
         this.title = this.props.title;
         this.organizatorName = this.props.organizatorName;
         this.dates = this.props.dates;
@@ -18,7 +19,7 @@ export default class eventpagecard extends React.Component {
     render() {
         return (
             <div className={style.eventPageCard}>
-                <div className={style.eventPageTitle}>{this.title}</div>
+                <div className={style.eventPageTitle}>{this.state.title}</div>
                 <div className={style.flexRow}>
                     <div>
                         <img src={this.preview} className={style.previewEvent}></img>

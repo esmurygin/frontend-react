@@ -6,22 +6,28 @@ export default class ShortEventCard extends React.Component {
 
     constructor(props) {
         super(props);
+        this.start_date = new Date(props.start_date);
+        this.end_date = new Date(props.end_date);
     }
 
     render() {
         return (
-            <div className={style.volunteerCard}>
+            <div className={style.volunteerCard} onClick={()=>document.location.href=`/event_page?id=${this.props.id}`} >
 
                 <div className={style.flexRow}>
                 <img src={'/static/greyLike.png'} style={{position:'absolute', right:"1rem", top:"1rem" }}></img>
 
-                    <h4 className={style.cardSubtitle}>Отбор волонтёров на экологическую смену на базе Национального парка</h4>
+                    <h4 className={style.cardSubtitle}>{this.props.name}</h4>
                 </div>
-                <div className={style.volunteerVolunteer}><img src={"/static/calendarEventPage.svg"} style={{ width: '12px', marginRight: '12px' }}></img> 17 Мая - 4 Июля, 16:00</div>
+                <div className={style.volunteerVolunteer}><img src={"/static/calendarEventPage.svg"} style={{ width: '12px', marginRight: '12px' }}></img>С {
+                        `${this.start_date.getDate()}.${this.start_date.getMonth()} ${this.start_date.getHours()}:${this.start_date.getMinutes()}`
+                    } по {
+                        `${this.end_date.getDate()}.${this.end_date.getMonth()} ${this.end_date.getHours()}:${this.end_date.getMinutes()}`
+                    }</div>
                 <div className={style.volunteerVolunteer}><img src={"/static/mapEventPage.svg"} style={{ width: '12px', marginRight: '12px' }}></img> Россия, г. Москва</div>
                 <div className={style.cardContent}>
                     <div className={style.upper}>
-                        <img src={this.props.image} className={style.eventCardImage} />
+                        <img src={'http://i-pro-backend.herokuapp.com/'+this.props.image_url} className={style.eventCardImage} />
                     </div>
                     <div style={{ height: '2rem' }}></div>
                     <div className={style.containerFlexRow}>

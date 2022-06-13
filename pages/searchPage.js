@@ -5,8 +5,19 @@ import SideFilters from '../components/sideFilters';
 import SearchFilters from '../components/searchFilters';
 import Navbar from '../components/navbar'
 import ShortEventCard from '../components/shortEventCard'
+import React from 'react';
 
-export default function searchPage() {
+export default class searchPage extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {data: []}
+        fetch('https://i-pro-backend.herokuapp.com/task').then(res => {
+            res.json().then(res => {
+                this.setState({data: res})
+            })
+        })
+    }
+    render(){
     return (
         <div>
             <MainNavbar></MainNavbar>
@@ -15,19 +26,19 @@ export default function searchPage() {
                 <SearchFilters></SearchFilters>
                 <div className={style.spacerFive} ></div>
                 <h3 className={style.subtitleTitle}>Найдено 385 результатов</h3>
-                <div className={style.spacerThree} ></div>
+                <div className={style.spacerThree}></div>
 
                 <div className={style.flexRow}>
                     <SideFilters></SideFilters>
                     <div className={style.doubleColumn}>
                         <div className={style.flexRow} style={{flexWrap:"wrap"}}>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
+                            {this.state.data.map((r)=>
+                                <ShortEventCard name={r.name} 
+                                image_url={r.image_url} 
+                                start_date={r.start_date} 
+                                end_date={r.end_date}
+                                id={r.id}></ShortEventCard>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -38,4 +49,5 @@ export default function searchPage() {
         </div>
 
     )
+    }
 }
