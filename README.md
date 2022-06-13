@@ -25,6 +25,7 @@
 * [ReactJS](https://reactjs.org/)
 * [NextJS](https://nextjs.org/)
 * [Heroku](https://heroku.com)
+* [MUI](https://mui.com/)
 
 
 
