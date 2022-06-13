@@ -2,9 +2,9 @@ import MainNavbar from '../components/navbar'
 import style from '../styles/organizationPage.module.css'
 import OrganizationHat from '../components/organizationHat'
 import Footer from '../components/footer'
-import {volunteerCard} from '../components/volunteerCard';
-import EventCard from '../components/eventCard';
+import VolunteerCard from '../components/volunteerCard';
 import SideScreen from '../components/sideScreen';
+import volunteercard from '../components/volunteerCard';
 
 export default function organizationPage() {
     return (
@@ -14,23 +14,21 @@ export default function organizationPage() {
                 <div className={style.spacerFive}></div>
                 <OrganizationHat hatImg={'/static/hackathonHat.png'} organizationTitle={'Хакатон-клуб'} avatarImg={'/static/avatarImg.png'} ></OrganizationHat>
                 <div className={style.sidebar}>
-                    <SideScreen n='1'></SideScreen>
+                    <SideScreen n='2'></SideScreen>
                     <div>
-                        <h1 className={style.big}>Мои мероприятия</h1>
-                        <div className={style.spacebtw}>
+                        <h1 className={style.big}>Мои волонтёры</h1>
+                        <div className={style.flex}>
                             <div className={style.searchBar}></div>
-                            <div className={style.add}>
-                                <p className='p'>Добавить</p>
-                            </div>
+                            <div className={style.add}></div>
                         </div>
                         <div className={style.organizationRows}>
                             <div className={style.navigationMenu}>
-                                <EventCard />
-                                <EventCard />
+                                <VolunteerCard />
+                                <VolunteerCard />
                             </div>
                             <div className={style.myEventsColumn}>
-                                <EventCard />
-                                <EventCard />
+                                <VolunteerCard />
+                                <VolunteerCard />
                             </div>
                         </div>
                     </div>

@@ -16,15 +16,15 @@ export default class SideScreen extends React.Component {
                     </div>
                 </div>
                 <div className={styles.tabs}>
-                    <div className={[styles.tab, styles.active].join(' ')}>
+                    <div className={[styles.tab, (this.props.n == '1'? styles.active : '')].join(' ')}>
                         <div className={styles.pileIcon}></div>
                         <div className={styles.text}>Мои мероприятия</div>
                     </div>
-                    <div className={styles.tab}>
+                    <div className={[styles.tab, (this.props.n == '2'? styles.active : '')].join(' ')}>
                         <div className={styles.groupIcon}></div>
                         <div className={styles.text}>Мои волонтёры</div>
                     </div>
-                    <div className={styles.tab}>
+                    <div className={[styles.tab, (this.props.n == '3'? styles.active : '')].join(' ')}>
                         <div className={styles.pileIcon}></div>
                         <div className={styles.text}>Заявки волонтёров</div>
                     </div>

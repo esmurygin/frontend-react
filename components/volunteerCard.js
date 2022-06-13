@@ -2,7 +2,7 @@ import { circularProgressClasses } from '@mui/material';
 import React from 'react';
 import style from '../styles/volunteerCard.module.css'
 
-export default class volunteercard extends React.Component {
+export default class VolunteerCard extends React.Component {
 
     constructor(props) {
         super(props);
