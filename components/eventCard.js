@@ -2,7 +2,7 @@ import { circularProgressClasses } from '@mui/material';
 import React from 'react';
 import style from '../styles/eventCard.module.css'
 
-export default class eventcard extends React.Component {
+export default class EventCard extends React.Component {
 
     constructor(props) {
         super(props);

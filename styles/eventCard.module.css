@@ -5,7 +5,8 @@
     height: 629px;
     display: flex;
     flex-direction: column;
-    width: 410px;
+    width: 350px;
+    margin: 1em;
 }
 
 .eventCardImage {

@@ -3,12 +3,13 @@
     height: 480px;
     width: 100%;
     border-radius: 80px 80px 0px 0px;
+    font-family: extended;
+
 }
 
 .footerTitle {
     width: 100%;
     color: #2892F4;
-    font-family: extended;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
@@ -41,7 +42,6 @@
 .footerColumnTitle {
     cursor:pointer;
     text-transform: uppercase;
-    font-family: Open Sans;
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
@@ -52,7 +52,6 @@
 .footerColumnElem {
     cursor:pointer;
     display:block;
-    font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;

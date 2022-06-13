@@ -23,20 +23,28 @@
 .flexAlignColumn > * {
     width: 100%;
 }
-
 .organizationRows {
     display:flex;
     flex-direction: row;
+    padding: 3em;
 }
 .navigationMenu {
     display:block;
-    background-color: white;
     height: 639px;
     min-width: 260px;
 }
-
+.sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 .myEventsColumn {
     display:block;
     flex-grow: 1;
-    background-color: red;
+}
+.big{
+    font-size: 36px;
+    font-family: extended;
+    color: #262626;
+    margin-left: 2em;
 }
