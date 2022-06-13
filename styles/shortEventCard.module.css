@@ -1,6 +1,6 @@
 .volunteerCard {
-    width: 410px;
-    height: 323px;
+    width: 360px;
+    height: 310px;
     background-color: #FFF;
     border-radius: 16px;
     position: relative;
@@ -29,6 +29,7 @@
     line-height: 17px;
     letter-spacing: 0px;
     text-align: left;
+    margin-left: 25px;
 
 }
 
@@ -68,8 +69,27 @@
     text-align: left;
     color: #18191B;
     margin: 0.8rem 0;
+    text-overflow: ellipsis;
+    margin-left: 25px;
+    width:289px;
+    height: 40px;
 }
 
+.titleCard{
+    font-family: regular;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #18191B;
+    margin: 0.8rem 0;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    width:289px;
+    height: 40px;
+    margin-top: 15px;
+}
 .containerFlexRow {
     display: flex;
     flex-direction: row;
