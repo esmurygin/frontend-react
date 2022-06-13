@@ -13,7 +13,7 @@ export default class EventCard extends React.Component {
     render() {
         return (
             <div className={style.eventCard}>
-                <img src={'http://i-pro-backend.herokuapp.com/'+this.props.image_url} className={style.eventCardImage} />
+                <img src={'http://i-pro-backend.herokuapp.com/'+this.props.image_url} className={style.eventCardImage} style={{objectFit:'cover'}}></img>
                 <div className={style.cardContent}>
                     <div className={style.circleText}><div className={style.circleOrange}></div>{this.props.task_type}</div>
                     <h3 className={style.headerText}>{this.props.name}</h3>

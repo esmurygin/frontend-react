@@ -41,7 +41,7 @@ export default class Main extends React.Component {
                         </div>
                         <div className={style.section1buttons}>
                             <a href="/searchPage"><button className={style.mainpagebtnfilled}>Хочу помогать</button></a>
-                            <a href="#"><button className={style.mainpagebtnempty}>Стать организатором</button></a>
+                            <a href="/organisationTasks"><button className={style.mainpagebtnempty}>Стать организатором</button></a>
                         </div>
                     </div>
                     <div className={style.spacer5}></div>
