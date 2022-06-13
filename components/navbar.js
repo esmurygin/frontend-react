@@ -12,13 +12,13 @@ export default class Navbar extends React.Component {
                 <div className={style.navigationPanelWrapper}>
                     <nav className={style.navigationPanel}>
                         <div>
-                            <a href="#" className={[style.navigationPanelItem, style.navigationPanelItemLogo].join(' ')}>
+                            <a href="/main" className={[style.navigationPanelItem, style.navigationPanelItemLogo].join(' ')}>
                                 Nashe Delo
                             </a>
                         </div>
                         <div className={style.navigationPanelSpacer}></div>
                         <div>
-                            <a href="#" className={[style.navigationPanelItem, style.navigationPanelItemSelected].join(' ')}>
+                            <a href="/main" className={[style.navigationPanelItem, style.navigationPanelItemSelected].join(' ')}>
                                 Главная
                             </a>
                             <a href="" className={style.navigationPanelItem}>
@@ -33,10 +33,10 @@ export default class Navbar extends React.Component {
                                     <img src={"/static/searchIcon.svg"} alt="" />
                                 </a>
                             </form>
-                            <a href="#">
+                            <a href="/login">
                                 <button className={[style.navigationPanelItem, style.navigationPanelLogin].join(' ')}>Войти</button>
                             </a>
-                            <a href="#">
+                            <a href="/registration">
                                 <button className={[style.navigationPanelItem, style.navigationPanelRegister].join(' ')}>Зарегистрироваться</button>
                             </a>
                         </div>

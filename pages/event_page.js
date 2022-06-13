@@ -75,7 +75,7 @@ export default function eventPage() {
 
                     </div>
                     <div className={style.spacerThree}></div>
-                    <button class={style.spaceButton}>Посмотреть ещё 257</button>
+                    <a href="/searchPage"><button class={style.spaceButton}>Посмотреть ещё 257</button></a>
                 </div>
                 <div className={style.spacerFive}></div>
 

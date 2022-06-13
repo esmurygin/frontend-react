@@ -21,13 +21,13 @@ export default function searchPage() {
                     <SideFilters></SideFilters>
                     <div className={style.doubleColumn}>
                         <div className={style.flexRow} style={{flexWrap:"wrap"}}>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
-                        <ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
+                        <a href="/event_page"><ShortEventCard image="/static/hands.png" className={style.futureCard}></ShortEventCard></a>
                         </div>
                     </div>
                 </div>

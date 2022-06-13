@@ -39,7 +39,7 @@ export default class Main extends React.Component {
                             </div>
                         </div>
                         <div className={style.section1buttons}>
-                            <a href="#"><button className={style.mainpagebtnfilled}>Хочу помогать</button></a>
+                            <a href="/searchPage"><button className={style.mainpagebtnfilled}>Хочу помогать</button></a>
                             <a href="#"><button className={style.mainpagebtnempty}>Стать организатором</button></a>
                         </div>
                     </div>
